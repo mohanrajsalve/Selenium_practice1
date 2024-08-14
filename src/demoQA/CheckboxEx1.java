@@ -26,7 +26,7 @@ public class CheckboxEx1 {
        ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", checkbox1);
        checkbox1.click();
        driver.findElement(By.xpath("//button[@aria-label='Toggle']")).click(); 
-       
+       driver.findElement(By.xpath("//button[@aria-label='Toggle']")).click();
        
        
 	}
