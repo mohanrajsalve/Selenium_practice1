@@ -1,6 +1,7 @@
 package demoQA;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,9 +14,15 @@ public class ActionsClassEx3 extends BrowserStartup {
 		String url = "https://demoqa.com/menu/";
 		driver= Startup(url, "CH");
 		 Actions actions = new Actions(driver);
-		 WebElement menuOption = driver.findElement(By.xpath(".//div[contains(text(),'Music')]"));
+		 WebElement menuOption = driver.findElement(By.xpath("//a[text()='Main Item 2']"));
+		 WebElement Menu = driver.findElement(By.xpath("//h1[@class='text-center']"));
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", Menu);
 	    	//Mouse hover menuOption 'Music'
-	    	actions.moveToElement(menuOption).perform();
+		 WebElement submenuOption = driver.findElement(By.xpath("//a[text()='SUB SUB LIST »']"));
+	    	actions.moveToElement(menuOption)
+	    	.moveToElement(submenuOption)
+	    	.build()
+	    	.perform();
 	}
 
 }

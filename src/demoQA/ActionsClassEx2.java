@@ -1,6 +1,7 @@
 package demoQA;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,7 +15,8 @@ public class ActionsClassEx2 extends BrowserStartup {
 		driver= Startup(url, "CH");
 		 Actions builder = new Actions(driver);
 		 WebElement from = driver.findElement(By.id("draggable"));
-		 WebElement to = driver.findElement(By.id("droppable"));	 
+		 WebElement to = driver.findElement(By.id("droppable"));
+		 ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true);", from);
 			builder.dragAndDrop(from, to).perform();	
 			String textTo = to.getText();
 

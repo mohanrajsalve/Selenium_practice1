@@ -24,6 +24,7 @@ public class ActionClassEx1 extends BrowserStartup {
 			
 			//Double Click the button 
 			actions.doubleClick(btnElement).perform(); 
+			
 		   
 	}
 
