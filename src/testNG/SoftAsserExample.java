@@ -12,11 +12,14 @@ public class SoftAsserExample {
 		  SoftAssert sa= new SoftAssert();
 		  sa.assertEquals(str,"pune");
 		  sa.assertEquals(str,"Mumbai");
+		  System.out.println("after fail");
 		  sa.assertEquals(str,getCityName());
+		  System.out.println("after method compare fail");
 		  sa.assertAll();
 	  }
+  
 	  public String getCityName() {
-	  String city = "pune";
+	  String city = "Mumbai";
 	  return city;
 	  }
  

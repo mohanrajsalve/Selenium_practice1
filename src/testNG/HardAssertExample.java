@@ -15,6 +15,7 @@ public class HardAssertExample {
 		  System.out.println("test pass");
 	  }
 	  Assert.assertEquals("Mumbai",str);
+	  System.out.println("Print after failing");
 	  Assert.assertEquals(str,getcityname());
   }
   public String getcityname() {

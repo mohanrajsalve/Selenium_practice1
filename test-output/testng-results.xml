@@ -1,131 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Test started]]>
-    </line>
-    <line>
-      <![CDATA[Test Checkifuserrightclick passed]]>
-    </line>
-    <line>
-      <![CDATA[Test passed]]>
-    </line>
-    <line>
-      <![CDATA[Test started]]>
-    </line>
-    <line>
-      <![CDATA[Test passed]]>
-    </line>
-    <line>
-      <![CDATA[Test started]]>
-    </line>
-    <line>
-      <![CDATA[Test passed]]>
-    </line>
-    <line>
-      <![CDATA[Test started]]>
-    </line>
-    <line>
-      <![CDATA[Test passed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-08-22T22:38:15 IST" name="Default suite" finished-at="2024-08-22T22:38:58 IST" duration-ms="42704">
+  <suite started-at="2024-08-26T23:07:39 IST" name="Suite" finished-at="2024-08-26T23:07:57 IST" duration-ms="18099">
     <groups>
     </groups>
-    <test started-at="2024-08-22T22:38:15 IST" name="Default test" finished-at="2024-08-22T22:38:58 IST" duration-ms="42704">
-      <class name="testNG.TestNGexample">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:16 IST" name="beforeTest" finished-at="2024-08-22T22:38:16 IST" duration-ms="18" status="PASS">
+    <test started-at="2024-08-26T23:07:39 IST" name="ParametrisingEx" finished-at="2024-08-26T23:07:49 IST" duration-ms="9405">
+      <class name="testNG.ParameteringEx1">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testNG.ParameteringEx1@1ed4ae0f]" started-at="2024-08-26T23:07:40 IST" name="loginTest" finished-at="2024-08-26T23:07:49 IST" duration-ms="9261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:16 IST" name="beforeClass" finished-at="2024-08-22T22:38:57 IST" duration-ms="41197" status="PASS">
+        </test-method> <!-- loginTest -->
+      </class> <!-- testNG.ParameteringEx1 -->
+    </test> <!-- ParametrisingEx -->
+    <test started-at="2024-08-26T23:07:49 IST" name="ParametrisingEx2" finished-at="2024-08-26T23:07:57 IST" duration-ms="8131">
+      <class name="testNG.ParameteringEx1">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testNG.ParameteringEx1@1750fbeb]" started-at="2024-08-26T23:07:49 IST" name="loginTest" finished-at="2024-08-26T23:07:57 IST" duration-ms="8112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="beforeMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Checkifuserrightclick()[pri:1, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="Checkifuserrightclick" finished-at="2024-08-22T22:38:57 IST" duration-ms="181" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test Checkifuserrightclick passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Checkifuserrightclick -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="afterMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="beforeMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="Checkifuserdoubleclick()[pri:2, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="Checkifuserdoubleclick" finished-at="2024-08-22T22:38:57 IST" duration-ms="337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Checkifuserdoubleclick -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="afterMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="beforeMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="bird()[pri:3, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="bird" finished-at="2024-08-22T22:38:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bird -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="afterMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="beforeMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="pet()[pri:4, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="pet" finished-at="2024-08-22T22:38:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pet -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="afterMethod" finished-at="2024-08-22T22:38:57 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Test passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:57 IST" name="afterClass" finished-at="2024-08-22T22:38:58 IST" duration-ms="859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testNG.TestNGexample@196a42c3]" started-at="2024-08-22T22:38:58 IST" name="afterTest" finished-at="2024-08-22T22:38:58 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- testNG.TestNGexample -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginTest -->
+      </class> <!-- testNG.ParameteringEx1 -->
+    </test> <!-- ParametrisingEx2 -->
+  </suite> <!-- Suite -->
 </testng-results>
